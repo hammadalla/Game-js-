@@ -1,0 +1,241 @@
+body {
+    background-color: #272b30;
+    font-family: 'Alegreya', serif;
+}
+
+.image {
+    width: 100%;
+    height: 300px;
+    background-position: center;
+    background-size: cover;
+}
+
+.navbar{
+position: sticky !important;
+top: 40px !important;
+transform: translateY(-50px);
+z-index: 9999;
+
+}
+
+.navbar-brand {
+    font-family: 'Alegreya', serif;
+    font-size: 30px;
+}
+
+.nav-link{
+    transition: all 1s;
+}
+
+.nav-link.active {
+    color: white !important;
+    font-family: 'Alegreya', serif;
+    transition: all 1s;
+}
+
+.nav-link:hover,
+.nav-link.active:hover {
+    color: rgba(144, 144, 144, 0.722) !important; 
+
+}
+
+.nav {
+    background-color: #3a497b;
+    border-radius: 30px;
+    box-shadow: 2px 2px 5px 5px;
+    padding: 10px 20px;
+}
+
+.nav img {
+    width: 50px;
+    padding-right: 5px;
+}
+
+.card-title,
+.btnn,
+.footer {
+    font-family: 'Alegreya', serif;
+    color: #fff;
+}
+
+.footer {
+    border-top: 1px solid #222426;
+    /* border-bottom: 2px solid #3e4144; */
+}
+
+.back {
+    background-color: #3f4246;
+    border-radius: 5px;
+    padding: 0px 5px;
+    color: #fff;
+}
+
+.card {
+    background-color: #272b30;
+}
+
+.prg {
+    color: #8c8e91;
+}
+
+.btnn {
+    background-color: #3a497b;
+}
+.btnn:hover {
+    background-color: #3a497b;
+}
+.card:hover {
+    transform: scale(1.1);
+}
+
+.card {
+    transition: all 1s;
+    border-radius: 5px;
+}
+
+
+.card img {
+    filter: grayscale(100%);
+}
+
+.card:hover img {
+    filter: grayscale(0%);
+}
+
+
+.sec{
+    z-index: 11210000;
+}
+
+.modal-body{
+    background-color: #272b30;
+}
+
+.sk-cube-grid {
+    width: 50px;
+    height: 50px;
+    margin: 100px auto;
+}
+
+.sk-cube-grid .sk-cube {
+    width: 33%;
+    height: 33%;
+    background-color: rgb(166, 78, 0);
+    float: left;
+    -webkit-animation: sk-cubeGridScaleDelay 1.3s infinite ease-in-out;
+    animation: sk-cubeGridScaleDelay 1.3s infinite ease-in-out;
+}
+
+.sk-cube-grid .sk-cube1 {
+    -webkit-animation-delay: 0.2s;
+    animation-delay: 0.2s;
+}
+
+.sk-cube-grid .sk-cube2 {
+    -webkit-animation-delay: 0.3s;
+    animation-delay: 0.3s;
+}
+
+.sk-cube-grid .sk-cube3 {
+    -webkit-animation-delay: 0.4s;
+    animation-delay: 0.4s;
+}
+
+.sk-cube-grid .sk-cube4 {
+    -webkit-animation-delay: 0.1s;
+    animation-delay: 0.1s;
+}
+
+.sk-cube-grid .sk-cube5 {
+    -webkit-animation-delay: 0.2s;
+    animation-delay: 0.2s;
+}
+
+.sk-cube-grid .sk-cube6 {
+    -webkit-animation-delay: 0.3s;
+    animation-delay: 0.3s;
+}
+
+.sk-cube-grid .sk-cube7 {
+    -webkit-animation-delay: 0s;
+    animation-delay: 0s;
+}
+
+.sk-cube-grid .sk-cube8 {
+    -webkit-animation-delay: 0.1s;
+    animation-delay: 0.1s;
+}
+
+.sk-cube-grid .sk-cube9 {
+    -webkit-animation-delay: 0.2s;
+    animation-delay: 0.2s;
+}
+
+@-webkit-keyframes sk-cubeGridScaleDelay {
+
+    0%,
+    70%,
+    100% {
+        -webkit-transform: scale3D(1, 1, 1);
+        transform: scale3D(1, 1, 1);
+    }
+
+    35% {
+        -webkit-transform: scale3D(0, 0, 1);
+        transform: scale3D(0, 0, 1);
+    }
+}
+
+@keyframes sk-cubeGridScaleDelay {
+
+    0%,
+    70%,
+    100% {
+        -webkit-transform: scale3D(1, 1, 1);
+        transform: scale3D(1, 1, 1);
+    }
+
+    35% {
+        -webkit-transform: scale3D(0, 0, 1);
+        transform: scale3D(0, 0, 1);
+    }
+}
+
+.landing{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: rgb(208, 208, 208);
+    z-index: 1200000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loding{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.537);
+    z-index: 1200000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width:992px){
+    .nav{
+        padding: 10px;
+        
+    }
+    .navbar-nav .nav-item .nav-link {
+        text-align: center;
+    }
+    /* .navbar-brand{
+        font-size: 20px;
+    } */
+}

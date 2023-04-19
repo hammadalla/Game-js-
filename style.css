@@ -1,0 +1,64 @@
+.parent{
+    height: 100vh;
+    background-image: url(images1.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+body{
+    background-image: linear-gradient(to right top, #00bdff, #0fa0dc, #1184ba, #0f6998, #095078, #064970, #034167, #003a5f, #00416b, #004977, #005083, #005890);
+}
+
+.tex{
+    font-family: monospace;
+    animation: animate 5s linear infinite;
+}
+@keyframes animate{
+0%{
+color: #0e3742;
+}
+100%{
+    color: #fff;
+    text-shadow: 0 0 10px #03bcf4, 0 0 20px #03bcf4,0 0 40px #03bcf4;
+}
+}
+.card {
+    background-color: transparent;
+    box-shadow: -5px 2px 54px -9px rgb(0 0 0);
+   
+}
+
+.form-control::placeholder {
+    color: white;
+}
+
+.form-control:focus {
+    box-shadow: -5px 2px 4px -12px rgb(0 0 0);
+}
+
+a {
+    text-decoration: none;
+}
+
+.bt a:hover {
+    text-decoration: underline;
+}
+
+.row {
+    height: 80vh;
+
+}
+
+@media screen and (max-width:992px) {
+    .nav-link.active {
+        text-align: center;
+    }
+
+    .navbar-nav .nav-item .btn{
+        width: 100%;
+        margin-top: 10px;
+    }
+    .navbar-toggler{
+        color: white;
+    }
+}

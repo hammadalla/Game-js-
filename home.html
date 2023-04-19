@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@300;400;500&family=Alegreya:wght@400;900&family=Cairo:wght@200&family=Caveat:wght@600&family=Hanken+Grotesk:ital,wght@0,900;1,200&family=Lora:ital,wght@1,500&family=Noto+Serif+NP+Hmong:wght@600&family=Staatliches&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="animate.css">
+    <link rel="stylesheet" href="game.css">
+    <title>GAME</title>
+</head>
+
+<body>
+    <div class="landing">
+        <div class="sk-cube-grid">
+            <div class="sk-cube sk-cube1"></div>
+            <div class="sk-cube sk-cube2"></div>
+            <div class="sk-cube sk-cube3"></div>
+            <div class="sk-cube sk-cube4"></div>
+            <div class="sk-cube sk-cube5"></div>
+            <div class="sk-cube sk-cube6"></div>
+            <div class="sk-cube sk-cube7"></div>
+            <div class="sk-cube sk-cube8"></div>
+            <div class="sk-cube sk-cube9"></div>
+        </div>
+    </div>
+    
+    <header>
+        <img src="images1.png" class="image" alt="">
+    </header>
+
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container nav">
+            <img src="images2.png" class="wow fadeInLeftBig" alt="">
+            <a class="navbar-brand text-white wow fadeInLeftBig" href="#"> GAME REVIEWS</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse wow fadeInRightBig" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" categ="mmorpg" aria-current="page" href="#">MMORPG</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" categ="shooter" href="#">SHOOTER</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" categ="sailing" href="#">SAILING</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" categ="permadeath" href="#">PERMADEATH</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" categ="superhero" href="#">SUPERHERO</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" categ="pixel" href="#">PIXEL</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-warning log " href="login.html">Log Out</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section id="game" class="">
+        <div class="container">
+            <div class="row g-4 overflow-hidden" id="myrow">
+
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <!-- Modal -->
+    <div class="modal modal-fullscreen	sec" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="container">
+                        <header class="d-flex justify-content-between">
+                            <h3 class="text-white fs-1">Details Game</h3>
+                            <button type="button" class="btn-close bg-warning" data-bs-dismiss="modal"
+                                aria-label="Close" id="closeEl"></button>
+                        </header>
+                        <div class="row " id="detils">
+                            <div class="loding" id="landing1">
+                                <div class="sk-cube-grid">
+                                    <div class="sk-cube sk-cube1"></div>
+                                    <div class="sk-cube sk-cube2"></div>
+                                    <div class="sk-cube sk-cube3"></div>
+                                    <div class="sk-cube sk-cube4"></div>
+                                    <div class="sk-cube sk-cube5"></div>
+                                    <div class="sk-cube sk-cube6"></div>
+                                    <div class="sk-cube sk-cube7"></div>
+                                    <div class="sk-cube sk-cube8"></div>
+                                    <div class="sk-cube sk-cube9"></div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 det1 wow fadeInLeftBig">
+                                <div class="dec d-flex justify-content-between">
+                                    <img src="" class="w-100" alt="" id="imagegame">
+
+                                    </div>
+                                 </div>
+                            <div class="col-md-8 det1 wow fadeInRightBig">
+                                <div class="word">
+                                <h3 class="text-white fs-3 ">Title: <span 
+                                    class="text-white fs-3" id="Title"></span></h3>
+                                    <p class="text-white fs-5" >Category: <span 
+                                            class="text-dark bg-info rounded-3 px-1 fs-6" id="Category"></span></p>
+                                    <p class="text-white fs-5" >Platform: <span
+                                            class="text-dark bg-info rounded-3 px-1 fs-6" id="Platform"></span>
+                                    </p>
+                                    <p class="text-white fs-5">Status: <span
+                                            class="text-dark bg-info rounded-3 px-1 fs-6" id="Status"></span> </p>
+                                    <p class="text-white" id="description"></p>
+                                    <button id="bttn" class="btn btn-outline-warning text-white fs-4">Show Game</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <section id="description" class="d-none">
+
+        </div>
+    </section>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="jquery-3.6.3.min.js"></script>
+    <script src="wow.min.js"></script>
+    <script src="./main.js"></script>
+</body>
+
+</html>

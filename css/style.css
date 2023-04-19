@@ -1,0 +1,34 @@
+.layer{
+    position: absolute;
+    bottom: -50%;
+    right: 15px;
+    left: 15px;
+    background-color: #fff;
+    transition: all 1s;
+}
+.item{
+    cursor: pointer;
+}
+.item:hover .layer{
+    bottom: 15px;
+}
+.layout{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #00000038;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+.image{
+    width: 50%;
+    height: 500px;
+    background-image: url(../images/portfolio-1.jpg);
+    background-size: cover;
+}
+.image i{
+    cursor: pointer;
+}
